@@ -1,0 +1,18 @@
+[
+  {
+    "arguments": [
+      "/usr/sbin/gcc",
+      "-c",
+      "-std=c11",
+      "-DSDL_MAIN_USE_CALLBACKS=1",
+      "-Isrc/include",
+      "-I/home/blaze/vcpkg/installed/x64-linux/include",
+      "-o",
+      "build/main_linux",
+      "main.c"
+    ],
+    "directory": "/home/blaze/_projects/C/vcpkg_template/SDL3",
+    "file": "/home/blaze/_projects/C/vcpkg_template/SDL3/main.c",
+    "output": "/home/blaze/_projects/C/vcpkg_template/SDL3/build/main_linux"
+  }
+]

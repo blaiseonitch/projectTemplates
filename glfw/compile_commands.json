@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/sbin/g++",
+      "-c",
+      "-std=c++17",
+      "-Isrc/include",
+      "-I/home/blaze/vcpkg/installed/x64-linux/include",
+      "-o",
+      "build/main_linux",
+      "src/main.cpp"
+    ],
+    "directory": "/home/blaze/_projects/C/vcpkg_template/glfw",
+    "file": "/home/blaze/_projects/C/vcpkg_template/glfw/src/main.cpp",
+    "output": "/home/blaze/_projects/C/vcpkg_template/glfw/build/main_linux"
+  }
+]

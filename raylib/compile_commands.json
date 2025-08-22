@@ -1,0 +1,17 @@
+[
+  {
+    "arguments": [
+      "/usr/sbin/gcc",
+      "-c",
+      "-std=c11",
+      "-Isrc/include",
+      "-I/home/blaze/vcpkg/installed/x64-linux/include",
+      "-o",
+      "build/main_linux",
+      "main.c"
+    ],
+    "directory": "/home/blaze/_projects/C/vcpkg_template/raylib",
+    "file": "/home/blaze/_projects/C/vcpkg_template/raylib/main.c",
+    "output": "/home/blaze/_projects/C/vcpkg_template/raylib/build/main_linux"
+  }
+]
