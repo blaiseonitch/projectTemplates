@@ -1,9 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
-
-#define GLAD_GL_IMPLEMENTATION // Necessary for headeronly version.
 #include <glad/gl.h>
-
 #include <GLFW/glfw3.h>
 
 const GLuint WIDTH = 800, HEIGHT = 600;
