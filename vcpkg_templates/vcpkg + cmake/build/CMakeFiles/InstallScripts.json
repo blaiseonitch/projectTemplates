@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/blaze/_projects/Cpp/vcpkg_/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
