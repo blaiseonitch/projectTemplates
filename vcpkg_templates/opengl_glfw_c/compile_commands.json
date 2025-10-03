@@ -1,0 +1,62 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Isrc/include",
+      "-Iglad/include",
+      "-I/home/blaze/vcpkg/installed/x64-linux/include",
+      "-o",
+      "build/mainx64li",
+      "src/main.c"
+    ],
+    "directory": "/home/blaze/_projects/_templates/opengl_glfw_c",
+    "file": "/home/blaze/_projects/_templates/opengl_glfw_c/src/main.c",
+    "output": "/home/blaze/_projects/_templates/opengl_glfw_c/build/mainx64li"
+  },
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Isrc/include",
+      "-Iglad/include",
+      "-I/home/blaze/vcpkg/installed/x64-linux/include",
+      "-o",
+      "build/mainx64li",
+      "glad/src/gl.c"
+    ],
+    "directory": "/home/blaze/_projects/_templates/opengl_glfw_c",
+    "file": "/home/blaze/_projects/_templates/opengl_glfw_c/glad/src/gl.c",
+    "output": "/home/blaze/_projects/_templates/opengl_glfw_c/build/mainx64li"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-w64-mingw32-gcc",
+      "-c",
+      "-Isrc/include",
+      "-Iglad/include",
+      "-I/home/blaze/vcpkg/installed/x64-mingw-static/include",
+      "-o",
+      "build/mainx64win.exe",
+      "src/main.c"
+    ],
+    "directory": "/home/blaze/_projects/_templates/opengl_glfw_c",
+    "file": "/home/blaze/_projects/_templates/opengl_glfw_c/src/main.c",
+    "output": "/home/blaze/_projects/_templates/opengl_glfw_c/build/mainx64win.exe"
+  },
+  {
+    "arguments": [
+      "/usr/bin/x86_64-w64-mingw32-gcc",
+      "-c",
+      "-Isrc/include",
+      "-Iglad/include",
+      "-I/home/blaze/vcpkg/installed/x64-mingw-static/include",
+      "-o",
+      "build/mainx64win.exe",
+      "glad/src/gl.c"
+    ],
+    "directory": "/home/blaze/_projects/_templates/opengl_glfw_c",
+    "file": "/home/blaze/_projects/_templates/opengl_glfw_c/glad/src/gl.c",
+    "output": "/home/blaze/_projects/_templates/opengl_glfw_c/build/mainx64win.exe"
+  }
+]
