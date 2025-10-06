@@ -1,11 +1,25 @@
 #include <iostream>
 #include "test.hpp"
+#include "GLFW/glfw3.h"
 #include "blaze.hpp"
 
+int main(){
+	glfwInit();
 
-int Square(int x) { return x * x; }
+	GLFWwindow *window = glfwCreateWindow(840, 400, "Hello world", nullptr, nullptr);
+	if (!window) {
+		glfwTerminate();
+		return -1;
+	}
 
-int main() { 
-	print("Hello, World!"); 
-	Me();
+	glfwMakeContextCurrent(window);
+
+	while (!glfwWindowShouldClose(window)) {
+		glfwSwapBuffers(window);
+		glfwPollEvents();
+	}
+
+	glfwTerminate();
+	return 0;
 }
+

@@ -4,22 +4,22 @@ project(main)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
+set(CMAKE_EXPORT_COMPILE_COMMANDS
+    ON
+    CACHE BOOL "Export compile commands" FORCE)
+add_executable(
+  ${PROJECT_NAME}
+  src/main.cpp
+  external/imgui/imgui.cpp
+  external/imgui/imgui_draw.cpp
+  external/imgui/imgui_demo.cpp
+  external/imgui/imgui_tables.cpp
+  external/imgui/imgui_widgets.cpp
+  external/imgui/rlImGui.cpp)
 
-add_executable(${PROJECT_NAME} 
-    src/main.cpp 
-    vendored/imgui/imgui.cpp
-    vendored/imgui/imgui_draw.cpp
-    vendored/imgui/imgui_demo.cpp
-    vendored/imgui/imgui_tables.cpp
-    vendored/imgui/imgui_widgets.cpp
-    vendored/imgui/rlImGui.cpp
-)
+target_link_libraries(
+  ${PROJECT_NAME}
+  PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/external/raylib/libraylib.a)
 
-target_link_libraries(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/vendored/raylib/libraylib.a)
-
-target_include_directories(${PROJECT_NAME} PRIVATE 
-    src
-    vendored/imgui
-    vendored/raylib
-)
-
+target_include_directories(${PROJECT_NAME} PRIVATE include external/imgui
+                                                   external/raylib)
