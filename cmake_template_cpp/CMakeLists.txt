@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10...4.0)
-project(square VERSION 1.2)
+project(main VERSION 1.2)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS
     ON
